@@ -120,7 +120,7 @@ select{
     font-weight: 500;
     margin-bottom: 20px;
 }
-.question-wrapper .answer-wrapper .answer {
+ .answer-wrapper .answer {
     width: 100%;
     height: 60px;
     padding: 20px;
@@ -129,7 +129,67 @@ select{
     border: 3px solid #3f4868;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.3s linear;
 }
+.answer .checkbox {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 3px solid #3f4868;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.answer .checkbox .icon {
+    opacity: 0;
+}
+.answer:hover .checkbox,
+.answer.selected .checkbox {
+    background-color: #0c80ef;
+    border-color: #0c80ef;
+}
+.answer.selected .checkbox .icon {
+    opacity: 1;
+}
+.answer.correct {
+    border-color: #0cef2a;
+}
+.answer.wrong {
+    border-color: #fc3939;
+}
+.question-wrapper,
+.answer-wrapper{
+    margin-bottom: 50px;
+}
+.btn.next {
+    /* show when answer submits */
+    display: none;
+}
+.end-screen .score {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.end-screen .score-text {
+    color: #a2aace;
+    font-size: 16px;
+    margin-bottom: 120px;
+}
+
+@media (max-width: 468) {
+    .container {
+        min-height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+/* UI is complete, let's head to Javascript
