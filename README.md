@@ -1,3 +1,8 @@
+![image](https://github.com/FrenchMontana10/alx_capstone_project/assets/101531220/25f2cbf3-312a-4be1-8682-fea2b1e651df)
+
+
+
+
 **Project Title:** Interactive Quiz Game
 
 **Objective:** 
